@@ -1,610 +1,2698 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivenna - Softness You Trust | Ultra Soft Facial Tissues</title>
+    <meta name="description" content="Vivenna Ultra Soft Facial Tissues — 2 Ply, 200 Pulls. Designed for everyday life, home, kitchen, bathroom, car, office, skincare, and bulk distribution." />
+    <meta property="og:title" content="Vivenna - Softness You Trust | Ultra Soft Facial Tissues" />
+    <meta property="og:description" content="Vivenna Ultra Soft Facial Tissues — 2 Ply, 200 Pulls. Designed for everyday life, home, kitchen, bathroom, car, office, skincare, and bulk distribution." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+
+    <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, Dancing Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --color-primary-navy: #0c2b53;
+        --color-deep-navy: #071c35;
+        --color-brand-blue: #0265b8;
+        --color-sky-blue: #e0f2fe;
+        --color-cyan-accent: #0284c7;
+        --color-accent-green: #00a86b;
+        --color-text-dark: #0d284a;
+        --color-text-muted: #55687d;
+        --color-bg-light: #f7faff;
+        --color-card-bg: #eef6fb;
+        --color-border-light: #d8e6f2;
+        --font-serif: 'Playfair Display', Georgia, serif;
+        --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        --font-script: 'Dancing Script', cursive;
+        
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        color: var(--color-text-dark);
+        background-color: #ffffff;
+        line-height: 1.5;
+        overflow-x: hidden;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      button {
+        cursor: pointer;
+        font-family: inherit;
+        border: none;
+        outline: none;
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--container-max);
+        margin: 0 auto;
+        padding: 0 24px;
+        position: relative;
+      }
+      /* =========================================
+        FLORAL BASE
+        ========================================= */
+
+
+      /* Header & Nav */
+      .site-header {
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(8px);
+        z-index: 50;
+        border-bottom: 1px solid rgba(216, 230, 242, 0.6);
+        padding: 16px 0;
+      }
+
+      .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .brand-logo {
+        display: flex;
+        align-items: center;
+      }
+
+     .logo-icon-svg {
+  width: 50px;
+    height: 50px;
+    display: block;
+    object-fit: contain;
+    padding-bottom: 10px;
+}
+
+      .brand-text-wrap {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .brand-title {
+        font-family: var(--font-serif);
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        color: var(--color-primary-navy);
+        line-height: 1.1;
+      }
+
+      .brand-sub {
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        color: var(--color-cyan-accent);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .brand-sub::before,
+      .brand-sub::after {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 1px;
+        background: currentColor;
+        opacity: 0.6;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        list-style: none;
+      }
+
+      .nav-link {
+        font-size: 15px;
+        font-weight: 500;
+        color: #334e68;
+        transition: color 0.2s;
+        position: relative;
+      }
+
+      .nav-link:hover {
+        color: var(--color-brand-blue);
+      }
+
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--color-primary-navy);
+        color: #ffffff;
+        padding: 10px 22px;
+        border-radius: 9999px;
+        font-size: 14px;
+        font-weight: 600;
+        transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 12px rgba(12, 43, 83, 0.15);
+      }
+
+      .nav-cta:hover {
+        background: #09203e;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 16px rgba(12, 43, 83, 0.25);
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--color-primary-navy);
+        padding: 8px;
+      }
+
+      /* Hero Section */
+      .hero-section {
+        position: relative;
+        overflow: hidden;
+
+        background: linear-gradient(
+          180deg,
+          #f3f8fd 0%,
+          #ffffff 100%
+        );
+
+        padding: 56px 0 64px;
+      }
+
+      /* =========================================
+        HERO FLORAL — TOP LEFT
+        ========================================= */
+
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        background: var(--color-sky-blue);
+        color: var(--color-cyan-accent);
+        font-size: 13px;
+        font-weight: 600;
+        padding: 6px 16px;
+        border-radius: 9999px;
+        margin-bottom: 20px;
+        letter-spacing: 0.02em;
+      }
+
+      .hero-title {
+        font-family: var(--font-serif);
+        font-size: 56px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+        line-height: 1.1;
+        margin-bottom: 18px;
+      }
+
+      .hero-desc {
+        font-size: 16px;
+        color: var(--color-text-muted);
+        line-height: 1.65;
+        max-width: 480px;
+        margin-bottom: 32px;
+      }
+
+      .hero-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--color-primary-navy);
+        color: #ffffff;
+        padding: 13px 28px;
+        border-radius: 9999px;
+        font-size: 15px;
+        font-weight: 600;
+        box-shadow: 0 4px 14px rgba(12, 43, 83, 0.2);
+        transition: all 0.2s ease;
+      }
+
+      .btn-primary:hover {
+        background: #071c35;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(12, 43, 83, 0.3);
+      }
+
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #ffffff;
+        color: var(--color-primary-navy);
+        border: 1.5px solid var(--color-primary-navy);
+        padding: 12px 26px;
+        border-radius: 9999px;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+      }
+
+      .btn-outline:hover {
+        background: #f0f7ff;
+        transform: translateY(-2px);
+      }
+
+      .hero-specs {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(216, 230, 242, 0.8);
+      }
+
+      .spec-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-primary-navy);
+      }
+
+      .spec-icon {
+        width: 22px;
+        height: 22px;
+        color: var(--color-primary-navy);
+      }
+
+      /* Hero Product Display */
+      .hero-content {
+        position: relative;
+        z-index: 3;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 60px 40px 60px 0;
+      }
+
+      /* Section 2: One Tissue. Many Moments */
+      .moments-section {
+        padding: 80px 0 70px;
+        position: relative;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 48px;
+      }
+
+      .section-title {
+        font-family: var(--font-serif);
+        font-size: 38px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+        line-height: 1.2;
+      }
+
+      .section-subtitle {
+        font-size: 15px;
+        color: var(--color-text-muted);
+        margin-top: 8px;
+      }
+
+      .moments-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px 24px;
+      }
+
+      .moment-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        group: true;
+      }
+
+      .moment-image-box {
+        width: 100%;
+        aspect-ratio: 16/10;
+        border-radius: 18px;
+        overflow: hidden;
+        margin-bottom: 14px;
+        box-shadow: 0 6px 18px rgba(12, 43, 83, 0.07);
+        background: #f1f5f9;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .moment-image-box:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(12, 43, 83, 0.12);
+      }
+
+      .moment-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+
+      .moment-image-box:hover .moment-img {
+        transform: scale(1.04);
+      }
+
+      .moment-title {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+      }
+
+      .moment-desc {
+        font-size: 13.5px;
+        color: var(--color-text-muted);
+        margin-top: 3px;
+      }
+
+      /* Section 3: Why Vivenna? */
+      .why-section {
+        padding: 80px 0;
+        position: relative;
+        background: #ffffff;
+      }
+
+      .why-subheading {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--color-brand-blue);
+        margin-bottom: 6px;
+      }
+
+      .why-title {
+        font-family: var(--font-serif);
+        font-size: 40px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+        margin-bottom: 40px;
+      }
+      
+      
+/* =========================================================
+   FULL-WIDTH HERO
+   ========================================================= */
+
+.hero-section {
+  position: relative;
+
+  min-height: 680px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: #0c2b53;
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+   ========================================================= */
+
+.hero-background {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+  overflow: hidden;
+}
+
+.hero-background-img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  /*
+    Product should remain visible on the
+    right side while text sits on the left.
+  */
+  object-position: center center;
+
+  transform: scale(1.01);
+}
+
+
+/* =========================================================
+   BRAND GRADIENT OVERLAY
+   ========================================================= */
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 32, 62, 0.88) 0%,
+      rgba(7, 32, 62, 0.72) 30%,
+      rgba(7, 32, 62, 0.34) 55%,
+      rgba(7, 32, 62, 0.04) 82%
+    );
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+   ========================================================= */
+
+.hero-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(
+    1200px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+  max-width: 620px;
+
+  padding: 110px 0;
+}
+
+
+/* =========================================================
+   TAG
+   ========================================================= */
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 15px;
+
+  margin-bottom: 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.hero-title {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(
+    52px,
+    6vw,
+    82px
+  );
+
+  line-height: 0.96;
+
+  font-weight: 700;
+
+  letter-spacing: -0.05em;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.hero-desc {
+  max-width: 540px;
+
+  margin: 28px 0 0;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 34px;
+}
+
+
+/* Primary CTA */
+
+.btn-primary {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  min-height: 52px;
+
+  padding: 0 23px;
+
+  border: 1px solid #0c2b53;
+
+  border-radius: 999px;
+
+  background: #ffffff;
+
+  color: #0c2b53;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Secondary CTA */
+
+.btn-outline {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  min-height: 52px;
+
+  padding: 0 23px;
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  backdrop-filter: blur(8px);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.btn-outline:hover {
+  transform: translateY(-2px);
+
+  background: rgba(255, 255, 255, 0.16);
+
+  border-color: #ffffff;
+}
+
+
+/* =========================================================
+   SPECS
+   ========================================================= */
+
+.hero-specs {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-top: 34px;
+}
+
+.spec-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .hero-section {
+    min-height: 620px;
+  }
+
+  .hero-content {
+    max-width: 560px;
+
+    padding: 90px 0;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(7, 32, 62, 0.9) 0%,
+        rgba(7, 32, 62, 0.72) 45%,
+        rgba(7, 32, 62, 0.25) 100%
+      );
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .hero-section {
+    min-height: 680px;
+
+    align-items: flex-end;
+  }
+
+
+  .hero-background-img {
+    object-position: 62% center;
+  }
+
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(7, 32, 62, 0.12) 0%,
+        rgba(7, 32, 62, 0.42) 38%,
+        rgba(7, 32, 62, 0.92) 72%,
+        rgba(7, 32, 62, 0.97) 100%
+      );
+  }
+
+
+  .hero-container {
+    width: 100%;
+  }
+
+
+  .hero-content {
+    max-width: none;
+
+    padding: 70px 24px 55px;
+  }
+
+
+  .hero-tag {
+    margin-bottom: 18px;
+
+    font-size: 10px;
+  }
+
+
+  .hero-title {
+    font-size: clamp(
+      44px,
+      13vw,
+      58px
+    );
+  }
+
+
+  .hero-desc {
+    margin-top: 22px;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+  }
+
+
+  .hero-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 10px;
+
+    margin-top: 28px;
+  }
+
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+  }
+
+
+  .hero-specs {
+    justify-content: space-between;
+
+    gap: 8px;
+
+    margin-top: 26px;
+  }
+
+
+  .spec-item {
+    font-size: 11px;
+  }
+}
+
+
+      .features-list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .feature-circle-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #0284c7 0%, #03487c 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        flex-shrink: 0;
+        box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+      }
+
+      .feature-text h4 {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+        line-height: 1.2;
+      }
+
+      .feature-text p {
+        font-size: 14px;
+        color: var(--color-text-muted);
+        margin-top: 2px;
+      }
+
+      /* Section 4: About Vivenna */
+      .about-section {
+        padding: 70px 0 80px;
+        position: relative;
+        background: #ffffff;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.05fr;
+        gap: 64px;
+        align-items: center;
+        padding: 0px 24px 0px 0px;
+      }
+
+      .about-image-card {
+        border-radius: 0px 20px 20px 0px;
+        overflow: hidden;
+        box-shadow: 0 16px 36px rgba(12, 43, 83, 0.09);
+        aspect-ratio: 4/3;
+      }
+
+      .about-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .about-kicker {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--color-cyan-accent);
+        margin-bottom: 8px;
+      }
+
+      .about-title {
+        font-family: var(--font-serif);
+        font-size: 38px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+        margin-bottom: 22px;
+      }
+
+      .about-p {
+        font-size: 15.5px;
+        line-height: 1.7;
+        color: var(--color-text-muted);
+        margin-bottom: 18px;
+      }
+
+      .about-script {
+        font-family: var(--font-script);
+        font-size: 34px;
+        font-weight: 700;
+        color: var(--color-brand-blue);
+        margin-top: 28px;
+        letter-spacing: 0.01em;
+      }
+
+      .bulk-section .container {
+        padding: 0px;
+      }
+
+      .bulk-card {
+        background: linear-gradient(135deg, #072242 0%, #0d3663 100%);
+        padding: 56px 48px;
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 24px 60px rgba(7, 34, 66, 0.25);
+      }
+
+      .bulk-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 52px;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+      }
+
+      .bulk-kicker {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #7dd3fc;
+        margin-bottom: 10px;
+      }
+
+      .bulk-title {
+        font-family: var(--font-serif);
+        font-size: 36px;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 1.2;
+        margin-bottom: 16px;
+      }
+
+      .bulk-desc {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #cbd5e1;
+        margin-bottom: 32px;
+        max-width: 480px;
+      }
+
+      .sectors-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 24px;
+        margin-bottom: 36px;
+      }
+
+      .sector-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #f1f5f9;
+      }
+
+      .sector-icon {
+        width: 20px;
+        height: 20px;
+        color: #38bdf8;
+      }
+
+      .btn-green {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--color-accent-green);
+        color: #ffffff;
+        padding: 13px 28px;
+        border-radius: 9999px;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        box-shadow: 0 4px 16px rgba(0, 168, 107, 0.4);
+      }
+
+      .btn-green:hover {
+        background: #008f5a;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 168, 107, 0.5);
+      }
+
+      /* Form Box */
+      .quote-form-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 36px 32px;
+        color: var(--color-text-dark);
+        box-shadow: 0 20px 44px rgba(0, 0, 0, 0.2);
+      }
+
+      .quote-form-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 14px;
+      }
+
+      .form-input,
+      .form-select {
+        width: 100%;
+        padding: 11px 16px;
+        border-radius: 8px;
+        border: 1px solid #d1d5db;
+        background: #ffffff;
+        font-size: 13.5px;
+        color: #1f2937;
+        outline: none;
+        transition: border-color 0.2s, box-shadow 0.2s;
+        font-family: inherit;
+      }
+
+      .form-input:focus,
+      .form-select:focus {
+        border-color: var(--color-brand-blue);
+        box-shadow: 0 0 0 3px rgba(2, 101, 184, 0.15);
+      }
+
+      .btn-submit-navy {
+        width: 100%;
+        background: var(--color-primary-navy);
+        color: #ffffff;
+        padding: 13px 20px;
+        border-radius: 9999px;
+        font-size: 14.5px;
+        font-weight: 600;
+        margin-top: 10px;
+        transition: background 0.2s, transform 0.2s;
+      }
+
+      .btn-submit-navy:hover {
+        background: #071c35;
+        transform: translateY(-1px);
+      }
+
+      /* Section 6: Amazon Banner & Testimonials */
+      .amazon-section {
+        padding: 20px 0 50px;
+      }
+
+      .amazon-banner {
+        background: var(--color-card-bg);
+        border: 1px solid var(--color-border-light);
+        border-radius: 20px;
+        padding: 32px 36px;
+        display: grid;
+        grid-template-columns: 1.1fr 1px 1.4fr;
+        gap: 36px;
+        align-items: center;
+      }
+
+      .amazon-left {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .amazon-logo-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .amazon-a-icon {
+        width: 36px;
+        height: 36px;
+        color: var(--color-primary-navy);
+      }
+
+      .amazon-title {
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+      }
+
+      .amazon-subtext {
+        font-size: 13.5px;
+        color: var(--color-text-muted);
+        line-height: 1.5;
+      }
+
+      .banner-divider {
+        background: var(--color-border-light);
+        height: 100%;
+        width: 1px;
+      }
+
+      .amazon-reviews {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .reviews-header {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .reviews-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-primary-navy);
+      }
+
+      .stars-row {
+        color: #f59e0b;
+        font-size: 15px;
+        display: flex;
+        gap: 2px;
+      }
+
+      .quotes-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .review-quote {
+        font-size: 13px;
+        color: #334155;
+        line-height: 1.45;
+      }
+
+      .review-quote span {
+        display: block;
+        margin-top: 4px;
+        font-size: 11.5px;
+        color: #64748b;
+      }
+
+      /* Section 7: Distribution Network Brands */
+      .brands-section {
+        padding: 50px 0 60px;
+        border-top: 1px solid #edf2f7;
+      }
+
+      .brands-header {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      .brands-title {
+        font-family: var(--font-serif);
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+      }
+
+      .brands-sub {
+        font-size: 14px;
+        color: var(--color-text-muted);
+        margin-top: 6px;
+      }
+
+      .brands-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+
+      .brand-item {
+        font-size: 20px;
+        font-weight: 700;
+        color: #475569;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        opacity: 0.9;
+      }
+
+      .brand-item.vivenna-brand {
+        font-family: var(--font-serif);
+        color: var(--color-primary-navy);
+        letter-spacing: 0.1em;
+      }
+
+      .btn-explore {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1.5px solid var(--color-primary-navy);
+        color: var(--color-primary-navy);
+        padding: 9px 20px;
+        border-radius: 9999px;
+        font-size: 13.5px;
+        font-weight: 600;
+        transition: all 0.2s;
+      }
+
+      .btn-explore:hover {
+        background: var(--color-primary-navy);
+        color: #ffffff;
+      }
+
+      /* Section 8: Pre-Footer Banner */
+      .prefooter-section {
+        background: linear-gradient(180deg, #f0f7fd 0%, #e2eef8 100%);
+        padding: 64px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .prefooter-title {
+        font-family: var(--font-serif);
+        font-size: 34px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+        margin-bottom: 8px;
+      }
+
+      .prefooter-sub {
+        font-size: 14.5px;
+        color: var(--color-text-muted);
+        margin-bottom: 28px;
+      }
+      .amazon-nav-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
+  color: currentColor;
+}
+      .prefooter-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .contact-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(12, 43, 83, 0.08);
+        border-radius: 20px;
+        padding: 20px 22px;
+        color: var(--color-primary-navy);
+        text-align: left;
+        box-shadow: 0 12px 30px rgba(12, 43, 83, 0.06);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .contact-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 36px rgba(12, 43, 83, 0.1);
+      }
+
+      .contact-icon {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 14px;
+        background: rgba(2, 132, 199, 0.12);
+        color: var(--color-brand-blue);
+      }
+
+      .contact-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .contact-label {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--color-text-muted);
+      }
+
+      .contact-value {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--color-primary-navy);
+        line-height: 1.4;
+      }
+
+      @media (max-width: 640px) {
+        .prefooter-actions {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Footer */
+      .site-footer {
+        background: var(--color-deep-navy);
+        color: #ffffff;
+        padding: 56px 0 28px;
+      }
+
+      .footer-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .footer-logo .brand-title {
+        color: #ffffff;
+      }
+
+      .footer-logo .brand-sub {
+        color: #ffffff;
+      }
+
+      .footer-nav {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        list-style: none;
+      }
+
+      .footer-nav a {
+        font-size: 14.5px;
+        color: #cbd5e1;
+        transition: color 0.2s;
+      }
+
+      .footer-nav a:hover {
+        color: #ffffff;
+      }
+
+      .footer-socials {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .social-link {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        transition: background 0.2s, transform 0.2s;
+      }
+
+      .social-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .footer-bottom {
+        padding-top: 24px;
+        text-align: center;
+        font-size: 13px;
+        color: #64748b;
+      }
+
+      /* Notification Toast */
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        background: var(--color-primary-navy);
+        color: #ffffff;
+        padding: 14px 22px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        font-size: 14px;
+        font-weight: 500;
+        z-index: 999;
+        display: none;
+        align-items: center;
+        gap: 10px;
+        animation: slideUp 0.3s ease forwards;
+      }
+
+
+/* =========================================
+   MOMENTS SECTION
+   ========================================= */
+
+.moments-section {
+  position: relative;
+  overflow: hidden;
+  background: #F8FAFC;
+}
+
+/* Keep actual section content above decorations */
+.moments-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================================
+   FLORAL DECORATIONS
+   ========================================= */
+
+.moments-floral {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.moments-floral img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Top-left */
+.moments-floral-top {
+  top: -90px;
+  left: -90px;
+  width: 200px;
+  height: 200px;
+}
+
+/* Bottom-right */
+.moments-floral-bottom {
+  right: -90px;
+  bottom: -90px;
+  width: 210px;
+  height: 210px;
+  transform: rotate(180deg);
+}
+
+```css
+/* =========================================================
+   WHY VIVENNA SECTION
+   ========================================================= */
+
+.why-section {
+  position: relative;
+  height: 560px;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #ecf3f1;
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+   ========================================================= */
+
+.why-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.why-background-img {
+  position: absolute;
+    top: 43%;
+    right: 0%;
+    width: 52%;
+    height: 114%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+    transform: translateY(-50%);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+   Keeps the left side clean for the text
+   ========================================================= */
+
+.why-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background: linear-gradient(
+    90deg,
+    rgba(234, 244, 248, 1) 0%,
+    rgba(234, 244, 248, 0.98) 18%,
+    rgba(234, 244, 248, 0.90) 32%,
+    rgba(234, 244, 248, 0.62) 47%,
+    rgba(234, 244, 248, 0.22) 66%,
+    rgba(234, 244, 248, 0.04) 100%
+  );
+}
+
+
+/* =========================================================
+   CONTENT CONTAINER
+   ========================================================= */
+
+.why-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.why-content {
+  width: 52%;
+  max-width: 570px;
+
+  padding: 70px 0;
+}
+
+
+/* Small blue label */
+
+.why-subheading {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #0265b8;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+
+/* Main heading */
+
+.why-title {
+  margin: 0;
+
+  color: #0c2b53;
+
+  font-size: clamp(44px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+
+/* =========================================================
+   FEATURES GRID
+   ========================================================= */
+
+.features-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 34px;
+  row-gap: 24px;
+
+  margin-top: 36px;
+}
+
+
+/* Individual feature */
+
+.feature-item {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  min-width: 0;
+}
+
+
+/* Circular icon */
+
+.feature-circle-icon {
+  width: 44px;
+  height: 44px;
+
+  flex: 0 0 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(12, 43, 83, 0.12);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.78);
+
+  color: #0c2b53;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* Feature title */
+
+.feature-text h4 {
+  margin: 0;
+
+  color: #0c2b53;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+
+/* Feature description */
+
+.feature-text p {
+  margin: 4px 0 0;
+
+  color: #526477;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .why-section {
+    height: 520px;
+    min-height: 520px;
+  }
+
+  .why-background-img {
+    right: -15%;
+    width: 125%;
+    height: 120%;
+  }
+
+  .why-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(234, 244, 248, 1) 0%,
+      rgba(234, 244, 248, 0.96) 20%,
+      rgba(234, 244, 248, 0.82) 38%,
+      rgba(234, 244, 248, 0.45) 58%,
+      rgba(234, 244, 248, 0.08) 100%
+    );
+  }
+
+  .why-content {
+    width: 58%;
+    padding: 60px 0;
+  }
+
+  .features-list {
+    column-gap: 24px;
+    row-gap: 20px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .why-section {
+    height: 650px;
+    min-height: 650px;
+
+    align-items: flex-end;
+  }
+
+
+  /* Move product higher/right on mobile */
+
+  .why-background-img {
+    top: 0;
+    right: -25%;
+
+    width: 150%;
+    height: 65%;
+
+    object-fit: cover;
+
+    transform: none;
+  }
+
+
+  /* Vertical gradient on mobile */
+
+  .why-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient( 90deg, rgba(236, 243, 241, 1) 0%, rgba(236, 243, 241, 0.98) 18%, rgba(236, 243, 241, 0.90) 32%, rgba(236, 243, 241, 0.62) 47%, rgba(236, 243, 241, 0.22) 66%, rgba(236, 243, 241, 0.04) 100% ); }
+
+
+  /* Full-width content */
+
+  .why-container {
+    width: 100%;
+  }
+
+  .why-content {
+    width: 100%;
+    max-width: none;
+
+    padding: 40px 24px 42px;
+  }
+
+
+  /* Heading */
+
+  .why-subheading {
+    margin-bottom: 10px;
+
+    font-size: 11px;
+  }
+
+  .why-title {
+    font-size: clamp(42px, 13vw, 56px);
+  }
+
+
+  /* One column on mobile */
+
+  .features-list {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    margin-top: 28px;
+  }
+
+
+  /* Smaller icons */
+
+  .feature-circle-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-basis: 42px;
+  }
+
+  .feature-text h4 {
+    font-size: 14px;
+  }
+
+  .feature-text p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .why-section {
+    height: 620px;
+    min-height: 620px;
+  }
+
+  .why-background-img {
+    right: -30%;
+    width: 160%;
+  }
+
+  .why-content {
+    padding: 35px 20px 36px;
+  }
+
+  .features-list {
+    gap: 14px;
+    margin-top: 24px;
+  }
+}
+```
+
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 767px) {
+
+  .moments-floral-top {
+    top: -45px;
+    left: -45px;
+    width: 140px;
+    height: 140px;
+    opacity: 0.12;
+  }
+
+  .moments-floral-bottom {
+    right: -45px;
+    bottom: -45px;
+    width: 155px;
+    height: 155px;
+    opacity: 0.12;
+  }
+
+}
+
+
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive Media Queries */
+      @media (max-width: 992px) {
+        .hero-desc {
+          margin: 0 auto 32px;
+        }
+
+        .hero-actions,
+        .hero-specs {
+          justify-content: center;
+        }
+
+        .moments-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .about-grid,
+        .bulk-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .amazon-banner {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+
+        .banner-divider {
+          display: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 42px;
+        }
+
+        .nav-links,
+        .nav-cta {
+          display: none;
+        }
+
+        .mobile-menu-btn {
+          display: block;
+        }
+
+        .nav-links.active {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: #ffffff;
+          padding: 24px;
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+          border-bottom: 1px solid var(--color-border-light);
+        }
+
+        .moments-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .sectors-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .quotes-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-top {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .footer-nav {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SVG Definitions & Mandala Sprites -->
+    <svg style="display: none">
+      <defs>
+        <!-- Reusable Decorative Mandala Corner Pattern -->
+        <g id="mandala-motif">
+          <circle cx="100" cy="100" r="90" fill="none" stroke="#0265b8" stroke-width="1.5" opacity="0.3"></circle>
+          <circle cx="100" cy="100" r="76" fill="none" stroke="#0284c7" stroke-width="2" opacity="0.5"></circle>
+          <circle cx="100" cy="100" r="62" fill="none" stroke="#0c2b53" stroke-width="1" stroke-dasharray="3,3"></circle>
+          <path d="M100 12 C108 45 125 65 158 72 C125 80 108 100 100 132 C92 100 75 80 42 72 C75 65 92 45 100 12 Z" fill="#0265b8" opacity="0.8"></path>
+          <path d="M100 35 C105 55 118 68 138 72 C118 78 105 90 100 110 C95 90 82 78 62 72 C82 68 95 55 100 35 Z" fill="#38bdf8"></path>
+          <path d="M42 42 C68 62 82 82 100 100 C82 82 62 68 42 42 Z" fill="#0c2b53" opacity="0.5"></path>
+          <circle cx="100" cy="100" r="16" fill="#072242"></circle>
+          <circle cx="100" cy="100" r="8" fill="#ffffff"></circle>
+        </g>
+      </defs>
+    </svg>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#home" class="brand-logo">
+          <img
+            src="assets/img/brand-logo.svg"
+            alt="Vivenna"
+            class="logo-icon-svg"
+          />
+          <div class="brand-text-wrap">
+            <span class="brand-title">VIVENNA</span>
+            <span class="brand-sub">Softness You Trust</span>
+          </div>
+        </a>
+
+        <!-- Center Menu Links -->
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#why-us" class="nav-link">Why Us</a></li>
+            <li><a href="#bulk-orders" class="nav-link">Bulk Orders</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
-            </div>
-        </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
-            </div>
-        </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
+
+        <!-- Right Header CTA -->
+        <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" class="nav-cta" id="headerAmazonBtn">
+          <!-- Amazon 'a' Icon -->
+          <svg class="amazon-nav-icon" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 465.46"><path fill="#fff" fill-rule="nonzero" d="M141.03 228.54c0-21.41 5.28-39.72 15.83-54.92 10.55-15.21 24.98-26.69 43.29-34.45 16.75-7.13 37.39-12.25 61.9-15.36 8.38-.93 22.03-2.17 40.96-3.72v-7.91c0-19.86-2.17-33.21-6.51-40.03-6.52-9.31-16.76-13.97-30.73-13.97h-3.72c-10.24.93-19.08 4.19-26.53 9.78-7.45 5.58-12.26 13.34-14.43 23.27-1.24 6.21-4.34 9.77-9.31 10.71l-53.53-6.52c-5.27-1.24-7.91-4.03-7.91-8.38 0-.93.16-2.02.47-3.26 5.27-27.61 18.23-48.09 38.86-61.44C210.31 9 234.43 1.55 262.05 0h11.64c35.37 0 62.99 9.15 82.85 27.46 3.11 3.12 5.99 6.46 8.61 10.01 2.64 3.57 4.73 6.75 6.28 9.54 1.56 2.79 2.95 6.83 4.19 12.1 1.24 5.28 2.17 8.93 2.8 10.94.62 2.02 1.08 6.36 1.39 13.04.31 6.67.47 10.62.47 11.86v112.64c0 8.07 1.16 15.44 3.49 22.11 2.32 6.68 4.58 11.48 6.75 14.43 2.17 2.95 5.74 7.68 10.7 14.2 1.86 2.79 2.8 5.27 2.8 7.45 0 2.48-1.25 4.65-3.73 6.51-25.76 22.35-39.72 34.45-41.89 36.31-3.72 2.79-8.22 3.1-13.5.93-4.34-3.73-8.14-7.29-11.4-10.71-3.26-3.41-5.59-5.89-6.98-7.44-1.4-1.56-3.65-4.58-6.75-9.08-3.11-4.5-5.28-7.52-6.52-9.08-17.38 18.93-34.44 30.72-51.2 35.38-10.55 3.1-23.58 4.65-39.1 4.65-23.89 0-43.52-7.37-58.88-22.11-15.36-14.74-23.04-35.6-23.04-62.6zm275.55 140.57c.62-1.24 1.55-2.49 2.8-3.73 7.75-5.27 15.2-8.84 22.34-10.7 11.79-3.1 23.27-4.81 34.44-5.12 3.1-.31 6.05-.16 8.84.46 13.97 1.24 22.35 3.57 25.14 6.98 1.24 1.87 1.86 4.66 1.86 8.38v3.26c0 10.86-2.95 23.66-8.84 38.4-5.9 14.74-14.12 26.61-24.67 35.61-1.55 1.24-2.95 1.86-4.19 1.86-.62 0-1.24-.15-1.86-.46-1.86-.93-2.33-2.64-1.4-5.13 11.48-26.99 17.22-45.76 17.22-56.31 0-3.42-.62-5.9-1.86-7.45-3.1-3.72-11.79-5.59-26.06-5.59-5.28 0-11.49.31-18.62.93-7.76.94-14.9 1.86-21.42 2.8-1.86 0-3.1-.31-3.72-.94-.62-.62-.77-1.24-.46-1.86 0-.31.15-.77.46-1.39zM.93 361.2c1.55-2.49 4.03-2.64 7.45-.47 77.57 44.99 161.98 67.49 253.21 67.49 60.81 0 120.86-11.33 180.13-33.98 1.55-.62 3.8-1.55 6.75-2.79s5.04-2.17 6.28-2.79c4.65-1.86 8.3-.93 10.94 2.79 2.64 3.72 1.78 7.14-2.56 10.24-5.59 4.03-12.73 8.69-21.41 13.96-26.69 15.83-56.48 28.09-89.37 36.77-32.89 8.69-65.01 13.04-96.35 13.04-48.41 0-94.18-8.46-137.31-25.37-43.13-16.91-81.77-40.73-115.9-71.45-1.86-1.55-2.79-3.1-2.79-4.65 0-.93.31-1.87.93-2.79zm220.16-141.97c0 12.1 3.03 21.8 9.08 29.09 6.05 7.29 14.19 10.94 24.43 10.94.93 0 2.25-.16 3.96-.47 1.71-.31 2.87-.46 3.49-.46 13.03-3.41 23.12-11.79 30.25-25.13 3.42-5.9 5.98-12.34 7.68-19.32 1.71-6.98 2.64-12.65 2.8-16.99.15-4.35.23-11.48.23-21.41v-11.64c-18 0-31.65 1.24-40.96 3.72-27.31 7.76-40.96 24.98-40.96 51.67z"/></svg>
+          <span>Buy on Amazon</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      
+<!-- Hero Section -->
+<section class="hero-section" id="home">
+
+  <!-- Background image -->
+  <div class="hero-background" aria-hidden="true">
+    <img
+      src="assets/img/vivenna-hero.png"
+      alt=""
+      class="hero-background-img"
+    />
+  </div>
+
+  <!-- Dark/brand gradient overlay -->
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <!-- Hero content -->
+  <div class="container hero-container">
+
+    <div class="hero-content">
+
+      <span class="hero-tag">
+        Ultra Soft Facial Tissues
+      </span>
+
+      <h1 class="hero-title">
+        One Tissue.<br />
+        Every Space.
+      </h1>
+
+      <p class="hero-desc">
+        Softness You Trust — designed for everyday life,
+        whether you're at home, in the kitchen, in the car,
+        or caring for your skin.
+      </p>
+
+      <div class="hero-actions">
+
+        <a
+          href="https://www.amazon.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary"
+        >
+                    <svg class="amazon-nav-icon" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 465.46"><path fill="#fff" fill-rule="nonzero" d="M141.03 228.54c0-21.41 5.28-39.72 15.83-54.92 10.55-15.21 24.98-26.69 43.29-34.45 16.75-7.13 37.39-12.25 61.9-15.36 8.38-.93 22.03-2.17 40.96-3.72v-7.91c0-19.86-2.17-33.21-6.51-40.03-6.52-9.31-16.76-13.97-30.73-13.97h-3.72c-10.24.93-19.08 4.19-26.53 9.78-7.45 5.58-12.26 13.34-14.43 23.27-1.24 6.21-4.34 9.77-9.31 10.71l-53.53-6.52c-5.27-1.24-7.91-4.03-7.91-8.38 0-.93.16-2.02.47-3.26 5.27-27.61 18.23-48.09 38.86-61.44C210.31 9 234.43 1.55 262.05 0h11.64c35.37 0 62.99 9.15 82.85 27.46 3.11 3.12 5.99 6.46 8.61 10.01 2.64 3.57 4.73 6.75 6.28 9.54 1.56 2.79 2.95 6.83 4.19 12.1 1.24 5.28 2.17 8.93 2.8 10.94.62 2.02 1.08 6.36 1.39 13.04.31 6.67.47 10.62.47 11.86v112.64c0 8.07 1.16 15.44 3.49 22.11 2.32 6.68 4.58 11.48 6.75 14.43 2.17 2.95 5.74 7.68 10.7 14.2 1.86 2.79 2.8 5.27 2.8 7.45 0 2.48-1.25 4.65-3.73 6.51-25.76 22.35-39.72 34.45-41.89 36.31-3.72 2.79-8.22 3.1-13.5.93-4.34-3.73-8.14-7.29-11.4-10.71-3.26-3.41-5.59-5.89-6.98-7.44-1.4-1.56-3.65-4.58-6.75-9.08-3.11-4.5-5.28-7.52-6.52-9.08-17.38 18.93-34.44 30.72-51.2 35.38-10.55 3.1-23.58 4.65-39.1 4.65-23.89 0-43.52-7.37-58.88-22.11-15.36-14.74-23.04-35.6-23.04-62.6zm275.55 140.57c.62-1.24 1.55-2.49 2.8-3.73 7.75-5.27 15.2-8.84 22.34-10.7 11.79-3.1 23.27-4.81 34.44-5.12 3.1-.31 6.05-.16 8.84.46 13.97 1.24 22.35 3.57 25.14 6.98 1.24 1.87 1.86 4.66 1.86 8.38v3.26c0 10.86-2.95 23.66-8.84 38.4-5.9 14.74-14.12 26.61-24.67 35.61-1.55 1.24-2.95 1.86-4.19 1.86-.62 0-1.24-.15-1.86-.46-1.86-.93-2.33-2.64-1.4-5.13 11.48-26.99 17.22-45.76 17.22-56.31 0-3.42-.62-5.9-1.86-7.45-3.1-3.72-11.79-5.59-26.06-5.59-5.28 0-11.49.31-18.62.93-7.76.94-14.9 1.86-21.42 2.8-1.86 0-3.1-.31-3.72-.94-.62-.62-.77-1.24-.46-1.86 0-.31.15-.77.46-1.39zM.93 361.2c1.55-2.49 4.03-2.64 7.45-.47 77.57 44.99 161.98 67.49 253.21 67.49 60.81 0 120.86-11.33 180.13-33.98 1.55-.62 3.8-1.55 6.75-2.79s5.04-2.17 6.28-2.79c4.65-1.86 8.3-.93 10.94 2.79 2.64 3.72 1.78 7.14-2.56 10.24-5.59 4.03-12.73 8.69-21.41 13.96-26.69 15.83-56.48 28.09-89.37 36.77-32.89 8.69-65.01 13.04-96.35 13.04-48.41 0-94.18-8.46-137.31-25.37-43.13-16.91-81.77-40.73-115.9-71.45-1.86-1.55-2.79-3.1-2.79-4.65 0-.93.31-1.87.93-2.79zm220.16-141.97c0 12.1 3.03 21.8 9.08 29.09 6.05 7.29 14.19 10.94 24.43 10.94.93 0 2.25-.16 3.96-.47 1.71-.31 2.87-.46 3.49-.46 13.03-3.41 23.12-11.79 30.25-25.13 3.42-5.9 5.98-12.34 7.68-19.32 1.71-6.98 2.64-12.65 2.8-16.99.15-4.35.23-11.48.23-21.41v-11.64c-18 0-31.65 1.24-40.96 3.72-27.31 7.76-40.96 24.98-40.96 51.67z"/></svg>
+
+
+          <span>Buy on Amazon</span>
+
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+
+        <a href="#bulk-orders" class="btn-outline">
+
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+
+          <span>Bulk Orders</span>
+
+        </a>
+
+      </div>
+
+
+      <div class="hero-specs">
+
+        <div class="spec-item">
+          <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                  <line x1="16" y1="8" x2="2" y2="22"></line>
+                  <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                </svg>
+          <span>200 Pulls</span>
         </div>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+
+        <div class="spec-item">
+          <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+          <span>2 Ply</span>
+        </div>
+
+        <div class="spec-item">
+          <svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                </svg>
+          <span>Ultra Soft</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+      <!-- Section 2: One Tissue. Many Moments -->
+      <section class="moments-section" id="moments">
+        <!-- Decorative floral elements --> <div class="moments-floral moments-floral-top" aria-hidden="true"> <img src="assets/img/mandala_original.png" alt="" /> </div> <div class="moments-floral moments-floral-bottom" aria-hidden="true"> <img src="assets/img/mandala_original.png" alt="" /> </div>
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">One Tissue. Many Moments.</h2>
+            <p class="section-subtitle">Different moments. Same trusted tissue.</p>
+          </div>
+
+          <!-- 6-Grid Lifestyle Cards -->
+          <div class="moments-grid">
+            <!-- 1. Living -->
+            <div class="moment-card">
+              <div class="moment-image-box">
+                <img
+                  src="assets/img/living_use_case.png"
+                  alt="Living room with sofa and tissue box"
+                  class="moment-img"
+                />
+              </div>
+              <h3 class="moment-title">Living</h3>
+              <p class="moment-desc">Everyday comfort</p>
+            </div>
+
+            <!-- 2. Kitchen -->
+            <div class="moment-card">
+              <div class="moment-image-box">
+                <img
+                  src="assets/img/kitchen_use_case.png"
+                  alt="Kitchen countertop with lemons and tissue box"
+                  class="moment-img"
+                />
+              </div>
+              <h3 class="moment-title">Kitchen</h3>
+              <p class="moment-desc">Quick clean-ups</p>
+            </div>
+
+            <!-- 3. Bathroom -->
+            <div class="moment-card">
+              <div class="moment-image-box">
+                <img
+                  src="assets/img/bathroom_use_case.png"
+                  alt="Bathroom vanity sink and tissue box"
+                  class="moment-img"
+                />
+              </div>
+              <h3 class="moment-title">Bathroom</h3>
+              <p class="moment-desc">Daily essential</p>
+            </div>
+
+            <!-- 4. Car -->
+            <div class="moment-card">
+              <div class="moment-image-box">
+                <img
+                  src="assets/img/car_use_case.png"
+                  alt="Car armrest console with tissue box"
+                  class="moment-img"
+                />
+              </div>
+              <h3 class="moment-title">Car</h3>
+              <p class="moment-desc">Always within reach</p>
+            </div>
+
+            <!-- 5. Skincare -->
+            <div class="moment-card">
+              <div class="moment-image-box">
+                <img
+                  src="assets/img/skincare_use_case.png"
+                  alt="Woman gently wiping face with soft tissue"
+                  class="moment-img"
+                />
+              </div>
+              <h3 class="moment-title">Skincare</h3>
+              <p class="moment-desc">Gentle on skin</p>
+            </div>
+
+            <!-- 6. Office -->
+            <div class="moment-card">
+              <div class="moment-image-box">
+                <img
+                  src="assets/img/office_use_case.png"
+                  alt="Laptop desk with tissue box"
+                  class="moment-img"
+                />
+              </div>
+              <h3 class="moment-title">Office</h3>
+              <p class="moment-desc">Workday companion</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+<section class="why-section" id="why-us">
+
+  <!-- Full section background -->
+  <div class="why-background" aria-hidden="true">
+    <img
+      src="assets/img/why-us.png"
+      alt=""
+      class="why-background-img"
+    />
+  </div>
+
+  <!-- Readability overlay -->
+  <div class="why-overlay" aria-hidden="true"></div>
+
+  <!-- Existing content -->
+  <div class="container why-container">
+
+    <div class="why-content">
+
+      <span class="why-subheading">
+        Designed for Everyday Quality
+      </span>
+
+      <h2 class="why-title">
+        Why Vivenna?
+      </h2>
+
+      <div class="features-list">
+
+        <!-- Feature 1 --> <div class="feature-item"> <div class="feature-circle-icon"> <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path> <line x1="16" y1="8" x2="2" y2="22"></line> </svg> </div> <div class="feature-text"> <h4>Ultra Soft</h4> <p>Gentle for daily use</p> </div> </div>
+         <!-- Feature 2 --> <div class="feature-item"> <div class="feature-circle-icon"> <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon> <polyline points="2 17 12 22 22 17"></polyline> <polyline points="2 12 12 17 22 12"></polyline> </svg> </div> <div class="feature-text"> <h4>2 Ply Strength</h4> <p>Balanced softness & durability</p> </div> </div>
+          <!-- Feature 3 --> <div class="feature-item"> <div class="feature-circle-icon"> <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path> <polyline points="14 2 14 8 20 8"></polyline> <line x1="16" y1="13" x2="8" y2="13"></line> <line x1="16" y1="17" x2="8" y2="17"></line> <polyline points="10 9 9 9 8 9"></polyline> </svg> </div> <div class="feature-text"> <h4>200 Pulls</h4> <p>Long-lasting value</p> </div> </div>
+           <!-- Feature 4 --> <div class="feature-item"> <div class="feature-circle-icon"> <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <rect x="3" y="3" width="7" height="7"></rect> <rect x="14" y="3" width="7" height="7"></rect> <rect x="14" y="14" width="7" height="7"></rect> <rect x="3" y="14" width="7" height="7"></rect> </svg> </div> <div class="feature-text"> <h4>Multipurpose</h4> <p>One tissue for every space</p> </div> </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+      <!-- Section 4: About Vivenna -->
+      <section class="about-section" id="about">
+        <div class="container about-grid">
+          <!-- Left Column Image -->
+          <div class="about-image-card">
+            <img
+              src="assets/img/about-us.png"
+              alt="Vivenna tissue box on soft luxury white linen with blue flower"
+            />
+          </div>
+
+          <!-- Right Column Text -->
+          <div class="about-content">
+            <span class="about-kicker">About Vivenna</span>
+            <h2 class="about-title">Softness You Trust</h2>
+            <p class="about-p">
+              Vivenna is built around one simple idea: create a tissue that's elegant enough for your home and reliable enough for everyday life.
+            </p>
+            <p class="about-p">
+              From family spaces to professional environments, our ultra-soft tissues are designed to deliver comfort, convenience and quality in one versatile product.
+            </p>
+            <p class="about-script">One tissue. More possibilities.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Bulk Orders & Distribution -->
+      <section class="bulk-section" id="bulk-orders">
+        <div class="container">
+          <div class="bulk-card">
+
+            <div class="bulk-grid">
+              <!-- Left Info Column -->
+              <div class="bulk-info">
+                <span class="bulk-kicker">Bulk Orders & Distribution</span>
+                <h2 class="bulk-title">Need More? We've Got You Covered.</h2>
+                <p class="bulk-desc">
+                  We supply hotels, restaurants, offices, salons, retailers, hospitals and institutional buyers with dependable tissue solutions.
+                </p>
+
+                <!-- 6 Sectors Grid -->
+                <div class="sectors-grid">
+                  <div class="sector-item">
+                    <svg class="sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 21h18M3 7v14M21 7v14M6 3h12a2 2 0 0 1 2 2v2H4V5a2 2 0 0 1 2-2zM9 10h2M13 10h2M9 14h2M13 14h2M9 18h2M13 18h2"></path>
+                    </svg>
+                    <span>Hotels</span>
+                  </div>
+                  <div class="sector-item">
+                    <svg class="sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>Offices</span>
+                  </div>
+                  <div class="sector-item">
+                    <svg class="sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span>Retail Stores</span>
+                  </div>
+                  <div class="sector-item">
+                    <svg class="sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                      <path d="M12 8v8M8 12h8"></path>
+                    </svg>
+                    <span>Hospitals</span>
+                  </div>
+                  <div class="sector-item">
+                    <svg class="sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                      <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                      <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+                    </svg>
+                    <span>Salons</span>
+                  </div>
+                  <div class="sector-item">
+                    <svg class="sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    </svg>
+                    <span>Distributors</span>
+                  </div>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+
+                <a href="#bulkQuoteCard" class="btn-green">
+                  <span>Request a Quote</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Right Form Column -->
+              <div class="quote-form-card" id="bulkQuoteCard">
+                <h3 class="quote-form-title">Get a Bulk Quote</h3>
+                <form id="bulkQuoteForm">
+                  <div class="form-group">
+                    <input type="text" class="form-input" id="name" placeholder="Name *" required />
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-input" id="company" placeholder="Company / Organization *" required />
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-input" id="phone" placeholder="Phone / WhatsApp *" required />
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-input" id="email" placeholder="Email *" required />
+                  </div>
+                  <div class="form-group">
+                    <select class="form-select" id="quantity" required>
+                      <option value="" disabled selected>Quantity Required</option>
+                      <option value="50-100">50 - 100 Boxes</option>
+                      <option value="100-500">100 - 500 Boxes</option>
+                      <option value="500-2000">500 - 2,000 Boxes</option>
+                      <option value="2000+">2,000+ Master Cartons</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn-submit-navy">Submit Enquiry</button>
                 </form>
+              </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </section>
+
+      <!-- Section 6: Available on Amazon & Reviews -->
+      <!--
+      <section class="amazon-section">
+        <div class="container">
+          <div class="amazon-banner">
+            <div class="amazon-left">
+              <div class="amazon-logo-row">
+                <svg class="amazon-a-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M13.84 15.65c-2.48 1.93-6.13 2.95-9.26 2.95-4.38 0-8.33-1.63-11.3-4.36-.23-.21-.02-.5.26-.35 3.2 1.8 7.07 2.88 11.04 2.88 2.78 0 5.82-.62 8.58-1.92.42-.2.8.29.68.8zm1.09-1.29c-.31-.4-.63-.8-.94-1.19-.13-.16-.09-.27.08-.34 1.15-.49 2.5-1.57 2.5-3.35 0-1.84-1.35-2.9-3.23-2.9-1.88 0-3.32 1.08-3.32 3.01 0 .61.16 1.17.47 1.67.08.13.04.22-.09.28-.27.13-.8.4-1.07.54-.13.06-.21.03-.27-.08-.47-.79-.73-1.69-.73-2.65 0-2.88 2.3-4.83 5.34-4.83 3.04 0 5.16 1.9 5.16 4.54 0 2.45-1.74 3.99-3.9 4.35z"/>
+                </svg>
+                <h3 class="amazon-title">Available on Amazon</h3>
+              </div>
+              <p class="amazon-subtext">Order Vivenna Ultra Soft Facial Tissues online and have softness delivered to your doorstep.</p>
+              <div>
+                <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 10px 22px; font-size: 13.5px;">
+                  <span>Buy on Amazon</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
             </div>
-        </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="banner-divider"></div>
+
+            <div class="amazon-reviews">
+              <div class="reviews-header">
+                <span class="reviews-title">Loved by 1000s of Customers</span>
+                <div class="stars-row">
+                  ★★★★★
                 </div>
+              </div>
+              <div class="quotes-grid">
+                <p class="review-quote">
+                  "Super soft and perfect for everyday use. Highly recommend!"
+                  <span>— Verified Amazon Purchase</span>
+                </p>
+                <p class="review-quote">
+                  "Great quality and value. Will definitely buy again."
+                  <span>— Verified Amazon Purchase</span>
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </section>
+      -->
+
+      <!-- Section 7: Distribution Network Brands -->
+      <!--
+      <section class="brands-section">
+        <div class="container">
+          <div class="brands-header">
+            <h2 class="brands-title">More Than One Brand. One Distribution Network.</h2>
+            <p class="brands-sub">We also work with and distribute a range of brands across the tissue and everyday essentials category.</p>
+          </div>
+
+          <div class="brands-row">
+            <div class="brand-item vivenna-brand">
+              <svg width="24" height="24" viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="42" stroke="currentColor" stroke-width="6"/>
+                <circle cx="34" cy="42" r="8" fill="currentColor"/>
+                <circle cx="66" cy="42" r="8" fill="currentColor"/>
+                <path d="M40 60 Q50 68 60 60" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+              <span>VIVENNA</span>
             </div>
-        </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="brand-item" style="color: #0284c7; font-family: var(--font-serif); font-style: italic;">
+              <span>SoftPure</span>
             </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="brand-item" style="color: #0369a1; font-weight: 500; letter-spacing: 0.05em;">
+              <span>PureTouch</span>
             </div>
+            <div class="brand-item" style="color: #0284c7;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+              </svg>
+              <span>CloudSoft</span>
+            </div>
+            <div class="brand-item" style="color: #0c2b53; font-weight: 700; letter-spacing: -0.02em;">
+              <span>EverCare</span>
+            </div>
+
+            <a href="#bulk-orders" class="btn-explore">
+              <span>Explore Our Brands</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+      </section>-->
+
+      <!-- Section 8: Pre-Footer CTA Banner -->
+      <section class="prefooter-section">
+
+        <div class="container">
+          <h2 class="prefooter-title">Contact Us.</h2>
+          <p class="prefooter-sub">Questions or comments? Get in touch and we'll be happy to help.</p>
+          <div class="prefooter-actions">
+            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </span>
+              <span class="contact-meta">
+                <span class="contact-label">WhatsApp / Call</span>
+                <span class="contact-value">+91--------</span>
+              </span>
+            </a>
+
+            <a href="mailto:info@vivennaecoware.com" class="contact-card">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <path d="m22 6-10 7L2 6"></path>
+                </svg>
+              </span>
+              <span class="contact-meta">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">info@vivennaecoware.com</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="footer-top">
+          <!-- Logo -->
+          <div class="footer-logo">
+            <img
+              src="assets/img/footer-brand-logo.svg"
+              alt="Vivenna"
+              class="logo-icon-svg"
+            />
+            <div class="brand-text-wrap">
+              <span class="brand-title">VIVENNA</span>
+              <span class="brand-sub">Softness You Trust</span>
+            </div>
+          </div>
+
+          <!-- Navigation Links -->
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#bulk-orders">Bulk Orders</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <!-- Social Icons -->
+          <div class="footer-socials">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <!-- Amazon -->
+            <a href="https://amazon.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Amazon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13.84 15.65c-2.48 1.93-6.13 2.95-9.26 2.95-4.38 0-8.33-1.63-11.3-4.36-.23-.21-.02-.5.26-.35 3.2 1.8 7.07 2.88 11.04 2.88 2.78 0 5.82-.62 8.58-1.92.42-.2.8.29.68.8zm1.09-1.29c-.31-.4-.63-.8-.94-1.19-.13-.16-.09-.27.08-.34 1.15-.49 2.5-1.57 2.5-3.35 0-1.84-1.35-2.9-3.23-2.9-1.88 0-3.32 1.08-3.32 3.01 0 .61.16 1.17.47 1.67.08.13.04.22-.09.28-.27.13-.8.4-1.07.54-.13.06-.21.03-.27-.08-.47-.79-.73-1.69-.73-2.65 0-2.88 2.3-4.83 5.34-4.83 3.04 0 5.16 1.9 5.16 4.54 0 2.45-1.74 3.99-3.9 4.35z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Vivenna. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Toast Notification -->
+    <div id="toastNotification" class="toast" role="alert">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <span id="toastMessage">Thank you! Your enquiry has been received.</span>
+    </div>
+
+    <!-- Client-side Vanilla JavaScript for Interactions -->
+    <script>
+      // Mobile Navigation Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.getElementById('navLinks');
+
+      if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        navLinks.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+          });
+        });
+      }
+
+      // Bulk Quote Form Handler
+      const quoteForm = document.getElementById('bulkQuoteForm');
+      const toast = document.getElementById('toastNotification');
+      const toastMessage = document.getElementById('toastMessage');
+
+      function showToast(msg) {
+        if (toast && toastMessage) {
+          toastMessage.textContent = msg;
+          toast.style.display = 'flex';
+          setTimeout(() => {
+            toast.style.display = 'none';
+          }, 4000);
+        }
+      }
+
+      if (quoteForm) {
+        quoteForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('name').value;
+          const company = document.getElementById('company').value;
+          const qty = document.getElementById('quantity').value;
+
+          showToast(`Thank you, ${name}! Your quotation request for ${company} (${qty || 'bulk units'}) has been submitted.`);
+          quoteForm.reset();
+        });
+      }
+    </script>
+  </body>
 </html>
